@@ -1,0 +1,155 @@
+
+.red_layer
+{
+	background-color: white;
+	width: 100vw;
+	height: 110vh;
+
+
+}
+/*#overlay
+{
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+}
+*/
+.triangle{
+	position: fixed;
+
+}
+
+.triangle_down{
+	  width: 0;
+      height: 0;
+      border-left: 50vw solid transparent;
+      border-right: 50vw solid transparent;
+      border-bottom: 50vh solid #E13530; 
+      bottom: -500vh;
+      animation: animate_td 5s ease ;
+
+}
+
+
+.triangle_left{
+	width: 0;
+      height: 0;
+      border-top: 50vh solid transparent;
+      border-left: 50vw solid #E13530;
+      border-bottom: 50vh solid transparent;
+      left: -500vw;
+      animation: animate_tl 5s ease ;
+}
+.triangle_right{
+	width: 0;
+      height: 0;
+      border-top: 50vh solid transparent;
+      border-right: 50vw solid #E13530;
+      border-bottom: 50vh solid transparent;
+      right: -500vw;
+       animation: animate_tr 5s ease ;
+}
+
+.triangle_up{
+	 width: 0;
+      height: 0;
+      border-left: 50vw solid transparent;
+      border-right: 50vw solid transparent;
+      border-top: 50vh solid #E13530;
+      top: -500vh;
+       animation: animate_tu 5s ease ;
+}
+
+/*triangle animation*/
+
+@keyframes animate_td{
+      0%{
+            bottom: -50vh;
+      }
+      20%
+      {
+            bottom: -10vh;
+      }
+      80%{
+            bottom: -10vh;
+      }
+      100%
+      {
+            bottom: -50vh;
+      }
+}
+
+@keyframes animate_tr{
+      0%{
+            right: -50vw;
+      }
+      20%
+      {
+            right: -10vw;
+      }
+      80%{
+            right: -10vw;
+      }
+      100%
+      {
+            right: -50vw;
+      }
+}
+
+
+@keyframes animate_tl{
+      0%{
+            left: -50vw;
+      }
+      20%
+      {
+            left: -10vw;
+      }
+      80%{
+            left: -10vw;
+      }
+      100%
+      {
+            left: -50vw;
+      }
+}
+
+
+@keyframes animate_tu{
+      0%{
+            top: -50vh;
+      }
+      20%
+      {
+            top: -10vh;
+      }
+      80%{
+            top: -10vh;
+      }
+      100%
+      {
+            top: -50vh;
+      }
+}
+
+/*********************/
+
+.loading{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+      color: red;
+      letter-spacing: 5px;
+      font-family: sans-serif;
+      text-align: center;
+}
+
+@media screen and (max-width: 400px)
+{
+      .loading
+      {
+            font-size: 0.7em;
+            letter-spacing: 2px;
+      }
+}
